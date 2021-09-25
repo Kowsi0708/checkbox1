@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        padding-left :10%;
+      }
+      .divider:after,
+      .divider:before {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: #eee;
+      }
+      .h-custom {
+        height: calc(100% - 73px);
+      }
+      @media (max-width: 450px) {
+        .h-custom {
+          height: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid ">
+      <h2>
+        Post Your Job
+        <small class="text-muted"
+          ><br />Get Quotes from top Freelancers for free.</small
+        >
+      </h2>
+      <hr />
+      <div >
+        <div class="row">
+          <div class="col-7 ">
+            <form col-md-8 col-lg-6 col-xl-4 offset-xl-1>
+              <div class="mb-3">
+                <i class="bi bi-briefcase"></i>
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Give your job a title
+                </label>
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="1"
+                ></textarea>
+              </div>
+              <div class="mb-3">
+                <i class="bi bi-newspaper"></i>
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Describe your job in detail
+                </label>
+                <h5>
+                  <small class="text-muted"
+                    >Include expected deliverables, requirements and time frame
+                    for delivery.</small
+                  >
+                </h5>
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="4"
+                ></textarea>
+                <div class="file-upload-wrapper">
+                  <input type="file" id="input-file-now" class="file-upload" />
+                </div>
+              </div>
+
+              <i class="bi bi-cash-coin"></i>
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >How do you want to pay for this job ?
+              </label>
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="true" href="#"
+                      >Active</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+
+              <i class="bi bi-gear-wide-connected"></i>
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Share your preferences
+              </label>
+              <div>
+              <span class="dropdown">
+                <button
+                  class="btn btn-light dropdown-toggle"
+
+
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Visibility
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault1"
+                      >All
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault2"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      for IEF Freelancers</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault3"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault3">
+                      IEF only</label
+                    >
+                  </div>
+                </div>
+              </span>
+              <span class="dropdown">
+                <button
+                  class="btn btn-light dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Location
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault1"
+                      >US
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault2"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      India</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault3"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault3">
+                      Germany</label
+                    >
+                  </div>
+                </div>
+              </span>
+           </div>
+              
+              <div class="container-fluid h-custom">
+                <div
+                  class="
+                    row
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                    h-100
+                  "
+                >
+                  
+                    <img
+                      src="https://mdbootstrap.com/img/Photos/new-templates/bootstrap-login-form/draw2.png"
+                      class="img-fluid"
+                      alt="Sample image"
+                    />
+                  
+                  <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                    <form>
+                      <div
+                        class="
+                          d-flex
+                          flex-row
+                          align-items-center
+                          justify-content-center justify-content-lg-start
+                        "
+                      >
+                        <p class="lead fw-normal mb-0 me-3">Sign in with</p>
+
+                        <button
+                          type="button"
+                          class="btn btn-primary btn-floating mx-1"
+                        >
+                          <i class="fa fa-facebook-f"></i>
+                        </button>
+
+                        <button
+                          type="button"
+                          class="btn btn-primary btn-floating mx-1"
+                        >
+                          <i class="fa fa-twitter"></i>
+                        </button>
+
+                        <button
+                          type="button"
+                          class="btn btn-primary btn-floating mx-1"
+                        >
+                          <i class="fa fa-linkedin"></i>
+                        </button>
+                      </div>
+
+                      <div class="divider d-flex align-items-center my-4">
+                        <p class="text-center fw-bold mx-3 mb-0">Or</p>
+                      </div>
+
+                      <!-- Email input -->
+                      <div class="form-outline mb-4">
+                        <input
+                          type="email"
+                          id="form3Example3"
+                          class="form-control form-control-lg"
+                          placeholder="Enter a valid email address"
+                        />
+                        <label class="form-label" for="form3Example3"
+                          >Email address</label
+                        >
+                      </div>
+
+                      <!-- Password input -->
+                      <div class="form-outline mb-3">
+                        <input
+                          type="password"
+                          id="form3Example4"
+                          class="form-control form-control-lg"
+                          placeholder="Enter password"
+                        />
+                        <label class="form-label" for="form3Example4"
+                          >Password</label
+                        >
+                      </div>
+
+                      <div
+                        class="
+                          d-flex
+                          justify-content-between
+                          align-items-center
+                        "
+                      >
+                        <!-- Checkbox -->
+                        <div class="form-check mb-0">
+                          <input
+                            class="form-check-input me-2"
+                            type="checkbox"
+                            value=""
+                            id="form2Example3"
+                          />
+                          <label class="form-check-label" for="form2Example3">
+                            Remember me
+                          </label>
+                        </div>
+                        <a href="#!" class="text-body">Forgot password?</a>
+                      </div>
+
+                      <div class="text-center text-lg-start mt-4 pt-2">
+                        <button
+                          type="button"
+                          class="btn btn-primary btn-lg"
+                          style="padding-left: 2.5rem; padding-right: 2.5rem"
+                        >
+                          Login
+                        </button>
+                        <p class="small fw-bold mt-2 pt-1 mb-0">
+                          Don't have an account?
+                          <a href="#!" class="link-danger">Register</a>
+                        </p>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <a href="#!" class="text-white me-4">
+                    <i class="fa fa-facebook-f"></i>
+                  </a>
+                  <a href="#!" class="text-white me-4">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  <a href="#!" class="text-white me-4">
+                    <i class="fa fa-google"></i>
+                  </a>
+                  <a href="#!" class="text-white">
+                    <i class="fa fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </div>
+            </form>
+          </div>
+          
+           <div class="col-3 float right ">
+         <h2 >It's free to post a Job</h2>
+          <br>
+         <small class="text-muted">
+         <div ><h6><i class="bi bi-people"></i>Access global talent pool</h6></div><br>
+          <div ><h6><i class="bi bi-people"></i>Get Quotes within hours</h6></div><br>
+           <div ><h6><i class="bi bi-people"></i>Create agreements mutually</h6></div><br>
+            <div ><h6><i class="bi bi-people"></i>Track progress in the WorkRoom</h6></div><br>
+             <div ><h6><i class="bi bi-people"></i>Protect payments with SafePayl</h6></div><br>
+        </small >
+          <h5>
+            Have a large number of Freelancers or jobs to manage?
+            Use IEF Freelancers site
+          </h5>
+      </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
